@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.mine {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #f2f2f2;
+  display: flex;
+}
+.card {
+  width: 100%;
+  max-width: 375px;
+  margin: auto;
+  background-color: white;
+  padding: 32px;
+}
+.text-cont {
+  margin-top: 53px;
+}
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.166667px;
+  color: #4d4f62;
+  text-align: center;
+}
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: 0.166667px;
+  color: #4d4f62;
+}
+p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.104167px;
+  color: #4d4f62;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  margin-top: 13px;
+}
+.boxes {
+  margin-top: 76px;
+}
+.box {
+  width: 311px;
+  height: 222px;
+  box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+  border-radius: 8px;
+  margin-top: 25px;
+}
+.box:nth-of-type(1) {
+  box-shadow: 0 1rem 2rem 0.5rem #dedede;
+  border-top: 0.5rem solid hsl(180, 62%, 55%);
+}
+.box:nth-of-type(2) {
+  box-shadow: 0 1rem 2rem 0.5rem #dedede;
+  border-top: 0.5rem solid hsl(0, 78%, 62%);
+}
+.box:nth-of-type(3) {
+  box-shadow: 0 1rem 2rem 0.5rem #dedede;
+  border-top: 0.5rem solid hsl(34, 97%, 64%);
+}
+.box:nth-of-type(4) {
+  box-shadow: 0 1rem 2rem 0.5rem #dedede;
+  border-top: 0.5rem solid hsl(212, 86%, 64%);
+}
+.text {
+  padding: 28px;
+}
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #4d4f62;
+}
+h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 23px;
+  opacity: 0.5;
+}
+.box-img {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 28px;
+}
+@media (min-width: 1440px) {
+  .card {
+    max-width: 600px;
+  }
+  h2 {
+    font-size: 36px;
+    line-height: 54px;
+    letter-spacing: 0.25px;
+  }
+  h1 {
+    font-size: 36px;
+    line-height: 54px;
+    letter-spacing: 0.25px;
+  }
+  .boxes {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 0px;
+  }
+
+  .box:nth-of-type(1) {
+    grid-area: 3 / 1 / 7 / 4;
+  }
+  .box:nth-of-type(2) {
+    grid-area: 1 / 4 / 5 / 7;
+  }
+  .box:nth-of-type(3) {
+    grid-area: 3 / 7 / 7 / 10;
+  }
+  .box:nth-of-type(4) {
+    grid-area: 5 / 4 / 9 / 7;
+  }
+}
